@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZooTopia - Checkout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="shortcut icon" href="./images/bird-logo.png" type="image/x-png">
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/site.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/pricing.css">
+    <link rel="stylesheet" href="./css/payment-form.css">
+  </head>
+  <body>
+    <span class="loader"></span>
+
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a href="./index.html" class="site-icon">
+          <img src="./images/bird-logo.png">
+        </a>
+    
+        <a href="./index.html" class="active">Home</a>
+    
+        <div class="dropdown">
+          <button class="dropbtn">Categories</button>
+          <div class="dropdown-content">
+            <a href="./category/land.html">Terrestial</a>
+            <a href="./category/aquatic.html">Aquatic</a>
+            <a href="./category/aerial.html">Aerial</a>
+          </div>
+        </div>
+        
+        <a href="./about.html">About</a>
+        <a href="./events.html">Events</a>
+  
+        <a href="javascript:void(0);" class="icon">
+          <i class="fa fa-bars"></i>
+        </a>
+    
+        <a class="active get-ticket-btn" href="./checkout.html">Get Ticket  <i style="margin-left: 4px;" class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    
+      <!-- Top Navigation Menu -->
+      <div class="topnav-mobile">
+        <a href="./index.html" style="width: 50px; height: 50px; padding: 0; background: none !important;">
+          <img src="./bird.png" style="width: 50px;height: 50px;float: left;object-fit: contain;">
+        </a>
+    
+        <div id="myLinks">
+          <a href="./index.html">Home</a>
+          <a href="./events.html">Events</a>
+          <a href="./about.html">About</a>
+          <a class="active" href="./checkout.html" style="
+            padding: 2rem;
+            text-align: end;
+            padding-right: 50px;
+            background: #008000a1;
+          ">Get Ticket  <i style="margin-left: 4px;" class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+
+    <section id="pricing" class="pricing">
+      <div class="pricing-card price-table-1">
+        <div class="pricing-card-price">
+          <h1>$15</h1>
+          <small>/mo</small>
+        </div>
+    
+        <div class="shadow-container">
+          <div class="pricing-card-header">
+            <div class="pricing-title">
+              <h1>Basic</h1>
+              <!-- <p>Lorem ipsum dolor sit</p> -->
+            </div>
+          </div>
+        </div>
+    
+        <div class="pricing-card-body">
+          <div class="pricing-body-title">
+            <h2>Featues</h2>
+            <!-- <p>Lorem ipsum dolor sit amet.</p> -->
+          </div>
+          <ul class="pricing-card-list">
+            <li class="pricing-card-list-item">
+              <i class="fas fa-check"></i>
+              <span>Access to all animal exhibits</span>
+            </li>
+            <li class="pricing-card-list-item">
+              <i class="fas fa-check"></i>
+              <span>One free train ride per visit</span>
+            </li>
+            <li class="pricing-card-list-item">
+              <i class="fas fa-check"></i>
+              <span>Monthly newsletter with updates</span>
+            </li>
+            <li class="pricing-card-list-item">
+              <i class="fas fa-check"></i>
+              <span>10% discount on gift shop purchases</span>
+            </li>
+            <li class="pricing-card-list-item">
+              <i class="fas fa-check"></i>
+              <span>Access to public feeding times</span>
+            </li>
+          </ul>
+        </div>
+        <!-- <button class="pricing-card-button">order now</button> -->
+      </div>
+    
+      <div class="pricing-card price-table-2">
+        <div class="pricing-card-price">
+          <h1>$99</h1>
+          <small>/mo</small>
+        </div>
+    
+        <div class="shadow-container">
+          <div class="pricing-card-header">
+            <div class="pricing-title">
+              <h1>VIP Bundle</h1>
+              <!-- <p>Lorem ipsum dolor sit</p> -->
+            </div>
+          </div>
+        </div>
+    
+        <div class="pricing-card-body">
+          <div class="pricing-body-title">
+            <h2>Features</h2>
+            <!-- <p>Lorem ipsum dolor sit amet.</p> -->
+          </div>
+
+          <ul class="pricing-card-list">
+            <li class="pricing-card-list-item">
+              <i class="fas fa-check"></i>
+              <span>All benefits from the Family Bundle</span>
+            </li>
+            <li class="pricing-card-list-item">
+              <i class="fas fa-check"></i>
+              <span>Exclusive early access to new exhibits</span>
+            </li>
+            <li class="pricing-card-list-item">
+              <i class="fas fa-check"></i>
+              <span>20% discount on gift shop purchases</span>
+            </li>
+            <li class="pricing-card-list-item">
+              <i class="fas fa-check"></i>
+              <span>Priority seating at special events</span>
+            </li>
+            <li class="pricing-card-list-item">
+              <i class="fas fa-check"></i>
+              <span>Access to VIP lounge</span>
+            </li>
+          </ul>
+        </div>
+        <!-- <button class="pricing-card-button">order now</button> -->
+      </div>
+    
+      <div class="pricing-card price-table-3">
+        <div class="pricing-card-price">
+          <h1>$40</h1>
+          <small>/mo</small>
+        </div>
+    
+        <div class="shadow-container">
+          <div class="pricing-card-header">
+            <div class="pricing-title">
+              <h1>Family Bundle</h1>
+              <!-- <p>Lorem ipsum dolor sit</p> -->
+            </div>
+          </div>
+        </div>
+    
+        <div class="pricing-card-body">
+          <div class="pricing-body-title">
+            <h2>Features</h2>
+            <!-- <p>Lorem ipsum dolor sit amet.</p> -->
+          </div>
+          <ul class="pricing-card-list">
+            <li class="pricing-card-list-item">
+              <i class="fas fa-check"></i>
+              <span>Access to all animal exhibits</span>
+            </li>
+            <li class="pricing-card-list-item">
+              <i class="fas fa-check"></i>
+              <span>Unlimited train rides</span>
+            </li>
+            <li class="pricing-card-list-item">
+              <i class="fas fa-check"></i>
+              <span>Monthly newsletter with updates</span>
+            </li>
+            <li class="pricing-card-list-item">
+              <i class="fas fa-check"></i>
+              <span>15% discount on gift shop purchases</span>
+            </li>
+            <li class="pricing-card-list-item">
+              <i class="fas fa-check"></i>
+              <span>Access to public feeding times</span>
+            </li>
+            <li class="pricing-card-list-item">
+              <i class="fas fa-check"></i>
+              <span>Free entry for two children</span>
+            </li>
+          </ul>
+        </div>
+        <!-- <button class="pricing-card-button">order now</button> -->
+      </div>
+    </section>
+
+    <section id="payment-form" class="mx-md-5 px-md-5">
+      <!-- form html -->
+      <div class="row" style="justify-content: center; margin: 2rem 0;">
+        <div class="form">
+          <div class="col-75">
+            <div class="formcontainer pt-4">
+              <form id="checkout-form">
+                <div class="row">
+                  <div class="col-50">
+                    <h3 style="margin-bottom: 20px;">Billing Address</h3>
+                    <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Full Name" />
+                    <p id="fname-error" class="text-danger"></p>
+              
+                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                    <input type="text" id="email" name="email" placeholder="Example@gmail.com" />
+                    <p id="email-error" class="text-danger"></p>
+              
+                    <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                    <input type="text" id="adr" name="address" placeholder="Address" />
+                    <p id="adr-error" class="text-danger"></p>
+              
+                    <label for="city"><i class="fa fa-institution"></i> City</label>
+                    <input type="text" id="city" name="city" placeholder="Karachi" />
+                    <p id="city-error" class="text-danger"></p>
+              
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" placeholder="KE" />
+                        <p id="state-error" class="text-danger"></p>
+                      </div>
+                      <div class="col-50">
+                        <label for="zip">Zip</label>
+                        <input type="text" id="zip" name="zip" placeholder="00000" />
+                        <p id="zip-error" class="text-danger"></p>
+                      </div>
+                    </div>
+
+                    <label for="guests"><i class="fa fa-users"></i> Number of Guests</label>
+                    <input type="number" id="guests" name="guests" placeholder="1" min="1" value="1" />
+                    <p id="guests-error" class="text-danger"></p>
+                  </div>
+              
+                  <div class="col-50">
+                    <h3>Payment</h3>
+                    <label for="cname">Name on Card</label>
+                    <input type="text" id="cname" name="cardname" placeholder="Card" />
+                    <p id="cname-error" class="text-danger"></p>
+              
+                    <label for="ccnum">Credit card number</label>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" />
+                    <p id="ccnum-error" class="text-danger"></p>
+              
+                    <label for="expmonth">Exp Month</label>
+                    <input type="text" id="expmonth" name="expmonth" placeholder="September" />
+                    <p id="expmonth-error" class="text-danger"></p>
+              
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="expyear">Exp Year</label>
+                        <input type="text" id="expyear" name="expyear" placeholder="2025" />
+                        <p id="expyear-error" class="text-danger"></p>
+                      </div>
+                      <div class="col-50">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="111" />
+                        <p id="cvv-error" class="text-danger"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <label><input type="checkbox" checked="checked" name="sameadr" /> Shipping address same as billing</label>
+                <input type="submit" value="Continue to checkout" class="btn" />
+              </form>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FOOTER start -->
+    <footer>
+      <div class="footer-container">
+        <div class="social-icons">
+          <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footernav">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./events.html">Events</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <li><a href="./sitemap.html">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerbottom">
+        <p class="mb-0">
+          Copyright &copy; 2024, Designed by
+          <span class="designer">Muhammad Ali Zaman Khan</span>
+        </p>
+      </div>
+    </footer>
+    <!-- FOOTER /end -->
+
+    <script src="./js/checkout.js"></script>
+  </body>
+</html>
